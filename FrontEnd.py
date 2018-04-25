@@ -89,7 +89,7 @@ while (True):
 		cur.close()
 	
 	elif (userInput == 3):
-		print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n")
+		print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n4 - View inventory\n")
 		userInput = getInput()
 		
 		if (userInput == 0):
@@ -114,7 +114,7 @@ while (True):
 				counter+=1
 				queryArray.append(item)
 	
-			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n")
+			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n4 - View inventory")
 			userInput = getInput()
 
 		elif (userInput == 2):
@@ -130,7 +130,7 @@ while (True):
 				counter+=1
 			queryArray.append(item)
 	
-			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n")
+			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n4 - View inventory")
 			userInput = getInput()
 		
 		elif (userInput == 3):
@@ -146,5 +146,19 @@ while (True):
 				counter+=1
 				queryArray.append(item)
 	
-			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n")
+			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n4 - View inventory\n")
+			userInput = getInput()
+		
+		elif (userInput == 4):
+			counter = 0
+			queryArray = []
+			
+			for item in db.fs.files.find():
+				print(counter)
+				pprint.pprint(item)
+				print("-------------------------------------------------------------------------------------")
+				counter+=1
+				queryArray.append(item)
+			
+			print("\n1 - Query by club name\n2 - Query by location\n3 - Query by condition\n4 - View inventory\n")
 			userInput = getInput()
