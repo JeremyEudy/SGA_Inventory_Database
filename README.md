@@ -12,9 +12,9 @@ This project depends on MongoDB.pm, MongoDB current, Pymongo, GridFS, Psycopg2, 
 ```
 sudo apt-get install MongoDB
 cpan MongoDB
-sudo pip3 install Pymongo
-sudo pip3 install Psycopg2
-sudo pip3 install pprint
+sudo pip install Pymongo
+sudo pip install Psycopg2
+sudo pip install pprint
 ```
 ### Compatibility
 Built to run on MonoDB v2.6 or above and PostgreSQL v9.5
