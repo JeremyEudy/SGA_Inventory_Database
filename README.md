@@ -1,7 +1,7 @@
 # SGA_Inventory_Database
 Inventory and budget database system for Florida Polytechnic SGA
 
-##Getting Started
+## Getting Started
 Easy clone:
 ```
 mkdir -p ~/SGA_Inventory_Database/ && cd
